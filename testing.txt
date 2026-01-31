@@ -1,4 +1,156 @@
 hello world
 shgjgjsk
-savitha
+Microsoft Windows [Version 10.0.22631.6199]
+(c) Microsoft Corporation. All rights reserved.
 
+C:\Users\s.Abinash\Downloads\git-branch>gh repo create my-repo-name --public --source=. --remote=origin --push
+'gh' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\s.Abinash\Downloads\git-branch>gh repo create my-repo-name --public --source=. --remote=origin --push
+'gh' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\s.Abinash\Downloads\git-branch>gh --version
+'gh' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\s.Abinash\Downloads\git-branch>echo "# demo" >> README.md
+
+C:\Users\s.Abinash\Downloads\git-branch>git init
+Initialized empty Git repository in C:/Users/s.Abinash/Downloads/git-branch/.git/
+
+C:\Users\s.Abinash\Downloads\git-branch>git add README.md
+
+C:\Users\s.Abinash\Downloads\git-branch>git commit -m "first commit"
+[master (root-commit) 6e403f0] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\Users\s.Abinash\Downloads\git-branch>git branch -M main
+
+C:\Users\s.Abinash\Downloads\git-branch>git remote add origin https://github.com/Abinash-003/demo.git       
+
+C:\Users\s.Abinash\Downloads\git-branch>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 221 bytes | 221.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abinash-003/demo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\s.Abinash\Downloads\git-branch>
+C:\Users\s.Abinash\Downloads\git-branch>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testing.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\s.Abinash\Downloads\git-branch>git add .
+
+C:\Users\s.Abinash\Downloads\git-branch>git commit -m "task"
+[main 2d4fc58] task
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testing.txt
+
+C:\Users\s.Abinash\Downloads\git-branch>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abinash-003/demo.git
+   6e403f0..2d4fc58  main -> main
+
+C:\Users\s.Abinash\Downloads\git-branch>git branch
+* main
+
+C:\Users\s.Abinash\Downloads\git-branch>git branch Abinash
+
+C:\Users\s.Abinash\Downloads\git-branch>git checkout Abinash
+Switched to branch 'Abinash'
+
+C:\Users\s.Abinash\Downloads\git-branch>git status
+On branch Abinash
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testing.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\s.Abinash\Downloads\git-branch>git add .
+
+C:\Users\s.Abinash\Downloads\git-branch>git commit -m "abi check"
+[Abinash 78de9e7] abi check
+ 1 file changed, 1 insertion(+)
+
+C:\Users\s.Abinash\Downloads\git-branch>git push
+fatal: The current branch Abinash has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Abinash
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\s.Abinash\Downloads\git-branch>git push -u origin Abinash      
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'Abinash' on GitHub by visiting:
+remote:      https://github.com/Abinash-003/demo/pull/new/Abinash
+remote:
+To https://github.com/Abinash-003/demo.git
+ * [new branch]      Abinash -> Abinash
+branch 'Abinash' set up to track 'origin/Abinash'.
+
+C:\Users\s.Abinash\Downloads\git-branch>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\s.Abinash\Downloads\git-branch>git pull origin main
+From https://github.com/Abinash-003/demo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\s.Abinash\Downloads\git-branch>git merge Abinash
+Updating 2d4fc58..78de9e7
+Fast-forward
+ testing.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\s.Abinash\Downloads\git-branch>git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abinash-003/demo.git
+   2d4fc58..78de9e7  main -> main
+
+C:\Users\s.Abinash\Downloads\git-branch>git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 314 bytes | 13.00 KiB/s, done.
+From https://github.com/Abinash-003/demo
+   78de9e7..fbfc52f  main       -> origin/main
+Updating 78de9e7..fbfc52f
+Fast-forward
+ testing.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\s.Abinash\Downloads\git-branch>git checkout Abinash
+Switched to branch 'Abinash'
+Your branch is up to date with 'origin/Abinash'.
+
+C:\Users\s.Abinash\Downloads\git-branch>
